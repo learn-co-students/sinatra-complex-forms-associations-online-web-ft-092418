@@ -10,8 +10,8 @@
  <label>Choose an existing owner:</label>
 
 <% @owners.each do |owner| %>
-
-  <input type="checkbox" name="owner[id]" id="<%= owner.id %>" value="<%=owner.id%>" <%='checked' if @pet.owner == owner %>><%=owner.name%></input>
+ 
+  <input type="radio" name="owner[id]" id="<%= owner.id %>" value="<%=owner.id%>" <%='checked' if @pet.owner == owner %>><%=owner.name%></input>
 <% end %>
 
  <br></br>
